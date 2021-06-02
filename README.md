@@ -26,10 +26,10 @@ Because it's faster to setup, and it is a teaching project.
 - Why Steamworks Facepunch?
 Because i find Steamworks.NET lacking and more complex. Nothing personal, sorry.
 
-- I have downloaded the project and opened it through Unity, but nothing is working and i'm getting errors.
+- I have downloaded the project and opened it through Unity, but nothing is working and i'm getting errors. Why?
 You have to open Steam (and login, of course) before playing in Unity.
 
-- When i accept an invite from Steam, it asks me to open Spacewar.
+- When i accept an invite from Steam, it asks me to open Spacewar. Why?
 It's because this is not a released game, it's just a sandbox project. To test, Steam allows developers to use 480 as AppId, which happens to be Spacewar on the Steam Store.
 If you want to accept an invite or join a lobby, use the in-game UI only.
 
@@ -50,6 +50,7 @@ Bullet.cs
 - Lag compensation simulation makes the tanks move through objects if their moving in that direction. It is not a real bug, it's just something that is still not handled.
 - The shooting VFX is not right aligned with the turret.
 - This is a 4 player max game, but if in the create lobby panel you select a higher number, it is valid. It's a super easy fix but i had no time.
+- The cannon and the mortar turrets material has always the same color. It's because they were added later and the material changing snippet was not performing a loop at that time, but changing the only turret i had.
 
 ## Final considerations
 It's not perfect, it's not definitive, it's not bugless (as i have reported in the known bugs session), but it does its dirty job very well.
